@@ -23,15 +23,27 @@ function Card(){
 
 function App(){
 return (
-    <div>
-  {/* header */}
+    // header
+
+ <div style={{display:"flex",gap:"10px",flexWrap:"wrap"}}>
     <Card/>
     <Card/>
     <Card/>
     <Card/>
     <Card/>
-    {/* footer */}
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+   
     </div>
+    // footer
 )
 }
 
