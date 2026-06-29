@@ -1,10 +1,40 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import React from "react"
+import ReactDOM from "react-dom/client"
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+//header
+// body
+// footer
+
+
+function Card(){
+    return(
+<div style={{border:"2px solid black",padding:"2px"}}>
+    <img src="https://imgs.search.brave.com/AfSuwap_n2n0j9W5uxav7y-w3phFX2NnZKaC9EuUZOc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFNaFJSeDJYSUwu/X0FDLl9TUjE4MCwy/MzAuanBn" alt="" height="200px" width="200px" />
+    <div style={{textAlign:"center"}}>
+        <h2>T-Shirts</h2>
+        <h2>40-80%off</h2>
+        <h2>Shop Now</h2>
+    </div>
+</div>
+    )
+}
+
+
+
+function App(){
+return (
+    <div>
+  {/* header */}
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    {/* footer */}
+    </div>
 )
+}
+
+
+const root=ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App/>)
