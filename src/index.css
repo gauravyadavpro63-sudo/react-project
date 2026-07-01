@@ -41,4 +41,7 @@ body{
 .card{
     background-color: rgb(99, 180, 99);
 }
-
+button{
+    height: 50px;
+    background-color: pink;
+}
