@@ -13,7 +13,7 @@ return (
 
  <div className="middle" style={{display:"flex",gap:"10px",flexWrap:"wrap"}}>
   {
-    arr.map((value,index)=> <Card key={index} cloth={value.cloth} offer={value.offer}/>)
+    arr.map((value,index)=> <Card key={index} cloth={value.cloth} offer={value.offer} price={value.price}/>)
   }
   </div>
 
